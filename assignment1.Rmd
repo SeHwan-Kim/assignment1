@@ -1,0 +1,22 @@
+---
+title: "assignment1"
+author: "sehwan-kim"
+date: "2016³â 9¿ù 8ÀÏ"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Liner Model
+Ozone=Wind+error
+
+```{r airquality}
+lm(Ozone~Wind,airquality)
+```
+
+```{r , echo=FALSE}
+plot(airquality$Wind,airquality$Ozone)
+abline(a=96.873, b=-5.551 )
+```
